@@ -33,7 +33,7 @@ label {
   flex: 5;
   height: 100vh;
   align-items: center;
-  max-width: 700px;
+  max-width: 900px;
   background-image: url(shore.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ label {
 .rgb {
   color: var(--color);
   margin-top: 11vh;
-  font-size: 3vh;
+  font-size: 4vh;
 }
 @media (max-width: 700px) {
   .controls * {
@@ -92,10 +92,10 @@ label {
     color: white;
   }
 
-  .controls input {
+  input {
     width: 80%;
   }
 
-  h1 {
+  .rgb {
   }
 }
