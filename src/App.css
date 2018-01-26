@@ -74,7 +74,7 @@ label {
   }
   .controls {
     background: rgba(0, 0, 0, 0.6);
-    position: absolute;
+    position: fixed;
     width: 100%;
     margin: 0 auto;
     bottom: 0;
