@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+  font-family: monospace;
+}
+
+:root {
+  --size: 200px;
+  --color: rgb(0, 0, 0, 0.5);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.controls {
+  flex: 2;
+  justify-content: center;
+}
+.controls * {
+  display: block;
+  margin: 4vh 0;
+}
+.controls input {
+  width: 80%;
+
+  margin: 0 auto;
+}
+label {
+  font-size: 4vh;
+}
+
+.boxContainer {
+  flex: 5;
+  height: 100vh;
+  align-items: center;
+  max-width: 700px;
+  background-image: url(shore.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box {
+  margin: 23vh auto;
+  align-items: center;
+  height: 26.8vh;
+  width: 35.6vh;
+  transform: rotate(-1.3deg) translateX(1.2vh) translateY(-0.4vh);
+  background: var(--color);
+  padding: ;
+}
+.rgb {
+  color: var(--color);
+  margin-top: 11vh;
+  font-size: 3vh;
+}
+@media (max-width: 700px) {
+  .controls * {
+    margin: 20px;
+  }
+  .boxContainer {
+    background-size: cover;
+  }
+}
+@media (max-height: 560px) {
+  .boxContainer {
+    background-size: auto 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    flex-direction: column;
+  }
+  .controls {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 0;
+  }
+  .box {
+    height: 26.8vh;
+    width: 35.6vh;
+  }
+
+  .controls * {
+    margin: 2px;
+  }
+
+  label {
+    color: white;
+  }
+
+  .controls input {
+    width: 80%;
+  }
+
+  h1 {
+  }
+}
