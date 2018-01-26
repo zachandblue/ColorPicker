@@ -34,6 +34,7 @@ label {
   height: 100vh;
   align-items: center;
   max-width: 900px;
+  background-color: rgba(240, 240, 250, 0.5);
   background-image: url(shore.jpg);
   background-size: cover;
   background-repeat: no-repeat;
